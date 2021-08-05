@@ -1,0 +1,12 @@
+version: 2.1
+
+commands:
+  my-command:
+    steps:
+      - run: echo "a command is a collection of steps"
+      - run: echo "this command has two steps"
+
+jobs:
+  my-job:
+    steps:
+      - my-command
